@@ -1,0 +1,5 @@
+title: Lord Lysine's
+description: this is the personal blog of @Lysine
+theme: minima      # the default theme
+plugins:
+  - jekyll-feed

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">
+    <time>{{ page.date | date: "%Y-%m-%d" }}</time>
+  </div>
+  
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  <!-- 上一篇/下一篇导航 -->
+  <div class="post-navigation">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}" class="prev">← {{ page.previous.title }}</a>
+    {% endif %}
+    {% if page.next %}
+      <a href="{{ page.next.url }}" class="next">{{ page.next.title }} →</a>
+    {% endif %}
+  </div>
+</article>

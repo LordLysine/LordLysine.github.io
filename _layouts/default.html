@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">首页</a> | 
+    <a href="/archive">所有文章</a>
+  </nav>
+  
+  <main>
+    {{ content }} <!-- 页面内容插入点 -->
+  </main>
+
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} {{ site.title }}</p>
+  </footer>
+</body>
+</html>

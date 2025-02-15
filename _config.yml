@@ -1,5 +1,7 @@
-title: Lord Lysine's
-description: this is the personal blog of @Lysine
-theme: minima      # the default theme
+title: @Lysine's Personal Blog
+description: description to be completed
+baseurl: "" 
+url: "https://LordLysine.github.io"
+theme: minima  # Jekyll default theme
 plugins:
   - jekyll-feed

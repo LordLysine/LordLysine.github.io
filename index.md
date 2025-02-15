@@ -4,9 +4,9 @@ title: @Lysine's Personal Blog
 description: description to be completed...
 ---
 
-# {{ page.title }} ✨
+# @Lysine's
 
-{{ page.description }}
+welcome to my personal blog! :)
 
 ---
 

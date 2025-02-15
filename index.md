@@ -1,21 +1,21 @@
 ---
 layout: default
-title: @Lysine's Personal Blog
-description: description to be completed...
+title: HOME
 ---
 
-# @Lysine's
+# {{ site.title }} 📝
 
-welcome to my personal blog! :)
+{{ site.description }}
 
 ---
 
 ## Latest
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> 
-      <small>({{ post.date | date: "%Y-%m-%d" }})</small>
-    </li>
-  {% endfor %}
-</ul>
+{% for post in site.posts limit:5 %}
+  <div class="post-preview">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <small>{{ post.date | date: "%Y-%m-%d" }}</small>
+    <p>{{ post.excerpt | strip_html | truncate: 100 }}</p>
+  </div>
+{% endfor %}
+
+[See All Posts →](/archive)

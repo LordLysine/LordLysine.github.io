@@ -10,7 +10,7 @@ date: 2024-01-01
 
 ```python
 print("Hello GitHub Pages!")
-
+```
 
 ---
 
